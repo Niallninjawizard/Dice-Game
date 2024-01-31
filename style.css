@@ -41,16 +41,13 @@ h1 {
   letter-spacing: 2px;
   padding: 6px 18px;
   border: solid 0.5px #548b8d;
+  background-color: #5f9ea020;
   border-radius: 1.5rem;
   cursor: pointer;
   transition: all 0.25s;
 }
 
-.button_generate {
-  background-color: #5f9ea020;
-}
-
-.button_generate:hover {
+.button:hover {
   background-color: #548b8d;
   color: #3e3e3e;
 }
@@ -97,12 +94,6 @@ h1 {
 .font__kanit-regular {
   font-family: "Kanit", sans-serif;
   font-weight: 400;
-  font-style: normal;
-}
-
-.font__kanit-semibold {
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
   font-style: normal;
 }
 
