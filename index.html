@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Kanit:ital,wght@0,100;0,400;0,600;0,700;1,100;1,400;1,600;1,700&family=Poor+Story&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game</title>
+  </head>
+  <body>
+    <!-- TOP NAVIGATION -->
+    <nav><h1 class="font__poor-story-regular">Dice Game</h1></nav>
+    <!-- MAIN SECTION -->
+    <main class="game-container center">
+      <!-- ROLL DICE BUTTON -->
+      <div class="button button_generate center font__kanit-regular">PLAY</div>
+      <!-- LEVEL INDICATOR -->
+      <div class="level_indicator-container font__kanit-thin"></div>
+      <!-- DICE ROLL CONTAINER -->
+      <div class="dice-container font__kanit-bold">
+        <!-- PLAYER DICE DISPLAY -->
+        <div class="player_dice font__kanit-regular"></div>
+        <span>vs</span>
+        <!-- CPU DICE DISPLAY -->
+        <div class="cpu_dice font__kanit-regular"></div>
+      </div>
+      <!-- GAME MESSAGE -->
+      <div class="game_message-container font__kanit-bold"></div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="font__poor-story-regular">&copy; by Niall Poulter</footer>
+    <script src="script.js"></script>
+  </body>
+</html>

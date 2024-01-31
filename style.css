@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  letter-spacing: normal;
+  padding-top: 1rem;
+  background-color: #0b3138;
+  color: #efefef;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin: 1rem 0 2rem 0;
+  color: #c8e7e9;
+}
+
+.game-container {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.button {
+  width: fit-content;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 6px 18px;
+  border: solid 0.5px #548b8d;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.button_generate {
+  background-color: #5f9ea020;
+}
+
+.button_generate:hover {
+  background-color: #548b8d;
+  color: #3e3e3e;
+}
+
+.level_indicator-container {
+  height: 1rem;
+  text-align: center;
+  padding: 8px;
+}
+
+.dice-container {
+  height: 5rem;
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: x-large;
+  margin-top: 1.75rem;
+}
+
+.dice-container > div {
+  width: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: solid 0.5px #548b8d;
+}
+
+.dice-container > span {
+  transform: translateY(1.25rem);
+}
+
+.game_message-container {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.font__kanit-thin {
+  font-family: "Kanit", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.font__kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font__kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font__kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font__poor-story-regular {
+  font-family: "Poor Story", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+}
