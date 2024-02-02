@@ -33,8 +33,8 @@ generateDiceRolls();
 // DISPLAY GAME
 let level = 0;
 
-const showDice = (bool) => {
-  bool
+const showDice = (player) => {
+  player
     ? (playerDice.innerHTML = plyrDiceRoll[level - 1])
     : (cpuDice.innerHTML = cpuDiceRoll[level - 1]);
 };
@@ -62,6 +62,8 @@ const clearGameDisplay = (result) => {
   }
 };
 
+let player = true;
+
 // Function to display game result
 const diceRollHandler = () => {
   level++;
@@ -69,9 +71,9 @@ const diceRollHandler = () => {
   const result = plyrDiceRoll[level - 1] >= cpuDiceRoll[level - 1];
   clearGameDisplay(result);
   levelIndicator.innerHTML = `Level ${level}`;
-  showDice(true);
+  showDice(player);
   setTimeout(() => {
-    showDice(false);
+    showDice(!player);
     showGameResult(result);
   }, 1000);
 };
